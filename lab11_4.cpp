@@ -4,6 +4,8 @@
 using namespace std;
 
 //Declare prototype of function template mySwap() here
+template<typename t>
+t mySwap(t& , t&);
 
 
 int main(){
@@ -36,4 +38,11 @@ int main(){
 
 
 //Write definition of function template mySwap() here
-
+template <typename z>
+z mySwap (z&x ,z&y){
+	z w = x ;
+	x = y;
+	y = w;
+	return x ;
+	return w ;
+} 
